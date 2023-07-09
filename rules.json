@@ -1,0 +1,20 @@
+[
+    {
+        "field": "From",
+        "predicate": "contains",
+        "value": "example",
+        "actions": ["mark_as_read"]
+    },
+    {
+        "field": "Subject",
+        "predicate": "does_not_equal",
+        "value": "important",
+        "actions": ["mark_as_unread", "move_message"]
+    },
+    {
+        "field": "Date",
+        "predicate": "less_than",
+        "value": "2023-06-01",
+        "actions": ["move_message"]
+    }
+]
